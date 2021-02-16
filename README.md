@@ -138,6 +138,9 @@ fig.tight_layout()  # otherwise the right y-label is slightly clipped
 plt.savefig("InflationRate-Month " + Country + " Export.png", bbox_inches='tight')
 ````
 
+<img src= "InflationRate-Month united-states.png" width="800">
+
+
 # Visualization annual data
 
 ```` python
@@ -181,7 +184,9 @@ ax1.set_ylabel('Inflationsrate')
 ax1.plot(df_year[(df_year["Country"] == Country)].Year, df_year[(df_year["Country"] == Country)].InflationRateYear, label='Inflation-Rate')
 fig.tight_layout()  # otherwise the right y-label is slightly clipped
 plt.savefig("InflationRate-Year " + Country + " Export.png", bbox_inches='tight')
-```` python
+````
+
 <img src= "InflationRate-Year united-states.png" width="800">
+
 
 
