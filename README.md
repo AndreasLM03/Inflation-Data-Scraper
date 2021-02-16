@@ -139,7 +139,9 @@ plt.savefig("InflationRate-Month " + Country + " Export.png", bbox_inches='tight
 ````
 
 <img src= "InflationRate-Month united-states.png" width="800">
-
+<img src= "InflationRate-Month france.png" width="800">
+<img src= "InflationRate-Month germany.png" width="800">
+<img src= "InflationRate-Month great-britain.png" width="800">
 
 # Visualization annual data
 
