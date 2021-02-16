@@ -2,6 +2,19 @@
 Inflation data are relevant in times of large monetary payouts to show the risk of demonetization. Furthermore, the gold price correlates with the real interest rate, which is determined by the official bank rate and the inflation rate.
 
 
+Consumer price inflation cannot be predicted into the future therefore you should never base your MONEY investment on the inflation rate
+
+How is inflation caused?
+Money is created only when loans are made possible and or when central banks buy bonds themselves.
+
+Wages: when the economy is running, more jobs are needed, the more labor in demand, the better the negotiating chances to get high wages.
+
+More retirees lead to more inflation: less available workforce, with the same production input. Workers have to perform more, therefore higher wages. 
+
+Technological progress: Personnel input can be saved, this also leads to inflation.
+
+
+
 <img src= "InflationRate-Month united-states.png" width="800">
 
 
@@ -135,7 +148,7 @@ ax1.set_xlabel('date')
 ax1.set_ylabel('Inflationsrate')
 ax1.plot(df[(df["Country"] == Country)].InflationRate, label='Inflation-Rate')
 fig.tight_layout()  # otherwise the right y-label is slightly clipped
-plt.savefig("InflationRate-Month " + Country + " Export.png", bbox_inches='tight')
+plt.savefig("InflationRate-Month " + Country + ".png", bbox_inches='tight')
 ````
 
 <img src= "InflationRate-Month united-states.png" width="800">
@@ -144,6 +157,8 @@ plt.savefig("InflationRate-Month " + Country + " Export.png", bbox_inches='tight
 <img src= "InflationRate-Month great-britain.png" width="800">
 
 # Visualization annual data
+
+In addition to monthly inflation rates, annual inflation rates can also be determined
 
 ```` python
 import pandas as pd
@@ -185,7 +200,7 @@ ax1.set_xlabel('date')
 ax1.set_ylabel('Inflationsrate')
 ax1.plot(df_year[(df_year["Country"] == Country)].Year, df_year[(df_year["Country"] == Country)].InflationRateYear, label='Inflation-Rate')
 fig.tight_layout()  # otherwise the right y-label is slightly clipped
-plt.savefig("InflationRate-Year " + Country + " Export.png", bbox_inches='tight')
+plt.savefig("InflationRate-Year " + Country + ".png", bbox_inches='tight')
 ````
 
 <img src= "InflationRate-Year united-states.png" width="800">
