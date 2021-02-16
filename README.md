@@ -126,7 +126,6 @@ np.savetxt(Datenpfad, df, delimiter=",", fmt=fmt)
 # Visualization of monthly data 
 
 ````python
-import pandas as pd
 Datenpfad = Grundpfad + currentdate + '_Inflationsdaten.csv'
 # df = pd.read_csv(filename, sep='\t', encoding = 'utf-16',nrows=10,  index_col="CASE") #Filename, Tabulator, Textcodierung, lade nur die ersten 10 Reihen ein, nehme Case als Index
 df = pd.read_csv(Datenpfad, sep=',', header=None)
@@ -163,9 +162,7 @@ plt.savefig("InflationRate-Month " + Country + ".png", bbox_inches='tight')
 In addition to monthly inflation rates, annual inflation rates can also be determined
 
 ```` python
-import pandas as pd
 Datenpfad = Grundpfad + currentdate + '_Inflationsdaten.csv'
-Datenpfad = Grundpfad + '2021-02-11_Inflationsdaten.csv'
 # df = pd.read_csv(filename, sep='\t', encoding = 'utf-16',nrows=10,  index_col="CASE") #Filename, Tabulator, Textcodierung, lade nur die ersten 10 Reihen ein, nehme Case als Index
 df = pd.read_csv(Datenpfad, sep=',', header=None)
 df.columns = ['Year', 'Month', 'Day', 'Country', 'InflationRate']
