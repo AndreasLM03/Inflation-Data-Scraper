@@ -4,6 +4,9 @@ Inflation data are relevant in times of large monetary payouts to show the risk 
 
 Consumer price inflation cannot be predicted into the future therefore you should never base your MONEY investment on the inflation rate
 
+
+<img src= "InflationRate-Month united-states.png" width="800">
+
 How is inflation caused?
 Money is created only when loans are made possible and or when central banks buy bonds themselves.
 
@@ -15,7 +18,6 @@ Technological progress: Personnel input can be saved, this also leads to inflati
 
 
 
-<img src= "InflationRate-Month united-states.png" width="800">
 
 
 To download the following data I found a website where monthly inflation data is listed in tables. Using a Python script, the monthly inflation data for different countries and given years are downloaded, saved to a CSV file and then visualized.
